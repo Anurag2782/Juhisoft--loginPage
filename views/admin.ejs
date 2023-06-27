@@ -1,0 +1,63 @@
+<%- include('partials/header') %>
+    <style>
+        body {
+            text-align: center;
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: aliceblue;
+        }
+        h1{
+            width: 100%;
+        }
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+    <h1>ADMIN ACCOUNT</h1>
+    <table>
+        <tr>
+            <th>Items/Customer</th>
+            <th>Customer1</th>
+            <th>Customer2</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Quantity</td>
+            <td>
+                <%= customer1[0]%>
+            </td>
+            <td>
+                <%= customer2[0]%>
+            </td>
+            <td>
+                <%= customer1[0] +customer2[0] %>
+            </td>
+        </tr>
+        <tr>
+            <td>Weight</td>
+            <td>
+                <%= customer1[1]%>
+            </td>
+            <td>
+                <%= customer2[1]%>
+            </td>
+            <td>
+                <%= customer1[1]+customer2[1]%>
+            </td>
+        </tr>
+        <tr>
+            <td>BoxCount</td>
+            <td>
+                <%= customer1[2]%>
+            </td>
+            <td>
+                <%= customer2[2]%>
+            </td>
+            <td>
+                <%= customer1[2]+customer2[2]%>
+            </td>
+        </tr>
+    </table>
+    <%- include('partials/footer') %>

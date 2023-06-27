@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+<div class="container">
+    <h1>ORDER DETAILS</h1>
+    <form action="/detail" method="post">
+        <label for="">Order Date</label><input type="date" name="order_date">
+        <label for="">Company</label><input type="text" name="company">
+        <label for="">Owner</label><input type="text" name="owner">
+        <label for="">item</label><input type="text" name="item">
+        <label for="">Quantity</label><input type="text" name="quantity">
+        <label for="">Weight</label><input type="text" name="weight">
+        <label for="">Request for Shipment</label><input type="text" name="req_shipment">
+        <label for="">Tracking ID</label><input type="text" name="tracking_id">
+        <label for="">Shipment Size</label><input type="text" name="shipment_size">
+        <label for="">Box Count</label><input type="text" name="box_count">
+        <label for="">Specification</label><input type="text" name="specification">
+        <label for="">Checklist Quantity</label><input type="text" name="checklist_quantity">
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<%- include('partials/footer') %>

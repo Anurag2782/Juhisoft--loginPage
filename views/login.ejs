@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<h1>Log-in</h1>
+    <div class="container">
+        <form action="/" method="post" >
+            <label for="id">ID</label>
+            <input type="text" name="id" placeholder="Enter your ID">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter your password">
+            
+            <button type="submit"><a>Log-in</a></button>
+            
+            <label for="">
+                <input type="checkbox" checked="checked" name="remember">Remember me
+            </label>
+        </form>
+        </div>
+   <div class="container">
+        <label for="cancel">
+            <button class="cancelbtn" name="cancel">Cancel</button>
+        </label>
+        <span class="psw">Forgot <a href="#">password</a></span>
+    </div>
+
+<%- include('partials/footer') %>
