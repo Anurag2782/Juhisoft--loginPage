@@ -5,10 +5,10 @@ const ejs = require("ejs");
 const app = express();
 // const connect=()=>{
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'newDB'
+    host: 'sql311.infinityfree.com',
+    user: 'if0_34515055',
+    password: 'hMEPGZogc59C7GA',
+    database: 'if0_34515055_db_users'
 });
 
 db.connect((err) => {
