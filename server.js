@@ -3,6 +3,7 @@ const express = require("express");
 const mysql = require('mysql');
 const ejs = require("ejs");
 const app = express();
+const port = process.env.PORT || 3000;
 // const connect=()=>{
 const db = mysql.createConnection({
     host: 'sql311.infinityfree.com',
@@ -12,9 +13,9 @@ const db = mysql.createConnection({
 });
 
 db.connect((err) => {
-    if (err) {
-        throw err;
-    }
+    // if (err) {
+    //     throw err;
+    // }
     console.log('Connected to database');
 });
 // }
@@ -106,7 +107,7 @@ app.post("/detail", function (req, res) {
     res.render("completed");
 })
 
-app.listen(3000, function () {
+app.listen(port, function () {
 
     console.log('Server has started at Port 3000');
 })
