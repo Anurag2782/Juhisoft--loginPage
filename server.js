@@ -5,12 +5,15 @@ const ejs = require("ejs");
 const app = express();
 const port = process.env.PORT || 3000;
 // const connect=()=>{
-const db = mysql.createConnection({
-    host: 'sql311.infinityfree.com',
-    user: 'if0_34515055',
-    password: 'hMEPGZogc59C7GA',
-    database: 'if0_34515055_db_users'
-});
+const db = mysql.createConnection(
+    data.sql;
+//     {
+//     host: 'sql311.infinityfree.com',
+//     user: 'if0_34515055',
+//     password: 'hMEPGZogc59C7GA',
+//     database: 'if0_34515055_db_users'
+// }
+);
 
 db.connect((err) => {
     if (err) {
